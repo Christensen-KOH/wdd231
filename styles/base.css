@@ -37,26 +37,29 @@ header span{
   font-weight: bold;
 }
 
-header button{
-  background: #a7bc5b;
+.ham-btn{
+  background-color: #8da242;
+    color: #ffffff;
   height: auto;
   font-size: 30px;
-  color: #ffffff;
   border: none;
   cursor: pointer;
 }
-
-.ham-btn{
-
+.ham-btn::before{
+  content: "\2630";
 }
 
-.ham-btn::after{
-  content: ;
-
+.ham-btn.show::before{
+  content: "\00D7";
 }
 
 /*navigation style*/
-
+.nav-bar{
+  display: none;
+}
+.nav-bar.show{
+  display: block;
+}
 .nav-bar ul {
   display: flex;
   flex-direction: column;
@@ -139,7 +142,6 @@ main{
 button{
   border-radius: 8px;
   background-color: #c9c9c9;
-  
 }
 
 .courses li{
@@ -177,6 +179,18 @@ footer{
   border-radius: 50%;
 }
 
-.social img:hover, header button:hover, .courses li:hover, .nav-bar li:hover{
+button:hover, .social img:hover, header button:hover, .courses li:hover, .nav-bar li:hover{
   background-color: orangered;
+}
+
+.credit-total{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Unique style for completed courses */
+.courses li.completed {
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
