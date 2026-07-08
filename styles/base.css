@@ -200,3 +200,7 @@ button:hover, .social img:hover, header button:hover, .courses li:hover, .nav-ba
   color: #ffffff;
   border: 1px solid #ffffff;
 }
+
+footer p{
+  color: #000000;
+}
