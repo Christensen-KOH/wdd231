@@ -56,7 +56,10 @@ header span{
 /*navigation style*/
 .nav-bar a{
   color: #000000;
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 84654e8b6513c3cdfdb02f8e6535edd27ef9c05c
 .nav-bar{
   display: none;
 }
