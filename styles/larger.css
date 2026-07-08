@@ -36,9 +36,6 @@
   }
 
   /*navigation style*/
-  .nav-bar a{
-    color: #000000;
-  }
   .nav-bar{
     display: block;
   }
@@ -80,7 +77,7 @@
   .my-photo h2,
   .courses h2 {
     background-color: #8da242;
-    color: #fff;
+    color: #000000;
     margin: 0;
     padding: 10px;
     text-align: center;
