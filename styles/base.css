@@ -1,5 +1,5 @@
 /* color scheme
-#ffffff
+#000000
 #a7bc5b
 #8da242 
 */
@@ -39,7 +39,7 @@ header span{
 
 .ham-btn{
   background-color: #8da242;
-    color: #ffffff;
+    color: #000000;
   height: auto;
   font-size: 30px;
   border: none;
@@ -73,7 +73,7 @@ header span{
 
 .nav-bar li{
   background-color: #a7bc5b;
-  color:#ffffff;
+  color:#000000;
   padding: 5px;
   cursor: pointer;
   font-size: small;
@@ -107,7 +107,7 @@ main{
 .my-photo h2,
 .courses h2{
   background-color: #8da242;
-  color: #fff;
+  color: #000000;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -167,7 +167,7 @@ footer{
   margin-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #8da242;
-  color: #ffffff;
+  color: #000000;
   padding: 5px;
 }
 
@@ -196,7 +196,6 @@ button:hover, .social img:hover, header button:hover, .courses li:hover, .nav-ba
   padding: 10px;
 }
 
-/* Unique style for completed courses */
 .courses li.completed {
   color: #ffffff;
   border: 1px solid #ffffff;
