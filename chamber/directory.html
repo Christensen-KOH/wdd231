@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce Directory</title>
+  <meta name="description" content="Chamber of Commerce Business Directory">
+  <meta name="author" content="Kemonaho Christensen Esaie KOH">
+
+  <!-- FaceBook Social Media Meta Settings -->
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore our local business directory.">
+  <!-- Note: Update the image URL with your actual GitHub Pages URL once deployed -->
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/social-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="..\index.html">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#" class="active">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="menu-controls">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </div>
+
+    <!-- The JavaScript will inject the JSON data here -->
+    <div id="directory-container" class="grid"></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> | Kemonaho Christensen Esaie KOH | WDD 231</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+
+</html>

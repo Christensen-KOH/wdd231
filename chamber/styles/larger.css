@@ -1,0 +1,30 @@
+/* Styles for larger screens (e.g., 768px and up) */
+@media (min-width: 768px) {
+
+  /* Grid View layout */
+  #directory-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  /* List View layout */
+  #directory-container.list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  #directory-container.list section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #directory-container.list img {
+    width: 100px;
+    margin-right: 1rem;
+  }
+}

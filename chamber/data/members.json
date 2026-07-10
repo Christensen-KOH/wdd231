@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Apex Web Solutions",
+    "address": "123 Tech Lane, Suite 100",
+    "phone": "(555) 123-4567",
+    "website": "https://example.com",
+    "image": "apex-logo.jpg",
+    "membershipLevel": 3,
+    "description": "Premium front-end development and hosting."
+  },
+  {
+    "name": "Mountain View Cafe",
+    "address": "450 Alpine Drive",
+    "phone": "(555) 987-6543",
+    "website": "https://example.com",
+    "image": "cafe-logo.jpg",
+    "membershipLevel": 1,
+    "description": "Local organic coffee and breakfast."
+  },
+  {
+    "name": "NextGen Logistics",
+    "address": "789 Freight Way",
+    "phone": "(555) 345-6789",
+    "website": "https://example.com",
+    "image": "logistics-logo.jpg",
+    "membershipLevel": 2,
+    "description": "Reliable shipping and receiving."
+  },
+  {
+    "name": "Summit Hardware",
+    "address": "1000 Main Street",
+    "phone": "(555) 456-7890",
+    "website": "https://example.com",
+    "image": "hardware-logo.jpg",
+    "membershipLevel": 2,
+    "description": "Your neighborhood hardware store."
+  },
+  {
+    "name": "Blue River Accounting",
+    "address": "200 Financial Blvd",
+    "phone": "(555) 567-8901",
+    "website": "https://example.com",
+    "image": "accounting-logo.jpg",
+    "membershipLevel": 3,
+    "description": "Corporate and personal tax services."
+  },
+  {
+    "name": "Evergreen Landscaping",
+    "address": "330 Green Ave",
+    "phone": "(555) 678-9012",
+    "website": "https://example.com",
+    "image": "landscape-logo.jpg",
+    "membershipLevel": 1,
+    "description": "Lawn care and landscape design."
+  },
+  {
+    "name": "Pioneer Books",
+    "address": "500 Library Square",
+    "phone": "(555) 789-0123",
+    "website": "https://example.com",
+    "image": "books-logo.jpg",
+    "membershipLevel": 1,
+    "description": "New and used books."
+  }
+]
