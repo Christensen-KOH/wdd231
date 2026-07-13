@@ -17,6 +17,9 @@ body {
   margin-right: 1rem;
 }
 
+.site-branding span{
+  font-size: x-large;
+}
 #menu-button {
   display: block;
   font-size: 2rem;
