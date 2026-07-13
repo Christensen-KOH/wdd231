@@ -17,7 +17,6 @@ body {
   margin-right: 1rem;
 }
 
-
 #menu-button {
   display: block;
   font-size: 2rem;
@@ -67,6 +66,11 @@ header nav li:last-child a {
   margin: 0 0.5rem;
   cursor: pointer;
   font-family: 'Salsa', cursive;
+  background-color: #333333;
+  color: #ffffff;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 #directory-container {
@@ -125,32 +129,17 @@ footer {
   margin-top: 2rem;
 }
 
-
-header nav a {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 header nav a:hover,
 header nav a:focus {
   background-color: #006b41;
   color: #ffffff;
-}
-
-#menu-button {
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu-button:hover,
 #menu-button:focus {
   color: #006b41;
-}
-
-.menu-controls button {
-  background-color: #333333;
-  color: #ffffff;
-  border: 2px solid #333333;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .menu-controls button:hover,

@@ -2,7 +2,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Fetch and display members
 const url = 'data/members.json';
 const display = document.querySelector('#directory-container');
 
@@ -55,10 +54,8 @@ const menuButton = document.querySelector('#menu-button');
 const navigation = document.querySelector('#primary-nav');
 
 menuButton.addEventListener('click', () => {
-    // Toggle the 'open' class on the navigation ul
     navigation.classList.toggle('open');
     
-    // Change the button symbol based on the menu state
     if (navigation.classList.contains('open')) {
         menuButton.textContent = '✖';
     } else {
