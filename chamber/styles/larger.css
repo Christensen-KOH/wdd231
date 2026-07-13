@@ -1,6 +1,20 @@
 /* Styles for larger screens (e.g., 768px and up) */
 @media (min-width: 768px) {
 
+  #menu-button {
+      display: none;
+    }
+  
+    /* Force the navigation to always show horizontally on desktop */
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    header nav li{
+      flex: 1;
+    }
+
   /* Grid View layout */
   #directory-container.grid {
     display: grid;

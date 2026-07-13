@@ -23,10 +23,12 @@ const displayMembers = (members) => {
         
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="150">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Website</a>
+            <div class="card-content">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Website</a>
+            </div>
         `;
         display.appendChild(card);
     });
@@ -46,4 +48,20 @@ gridButton.addEventListener('click', () => {
 listButton.addEventListener('click', () => {
     display.classList.add('list');
     display.classList.remove('grid');
+});
+
+// Hamburger Menu Toggle
+const menuButton = document.querySelector('#menu-button');
+const navigation = document.querySelector('#primary-nav');
+
+menuButton.addEventListener('click', () => {
+    // Toggle the 'open' class on the navigation ul
+    navigation.classList.toggle('open');
+    
+    // Change the button symbol based on the menu state
+    if (navigation.classList.contains('open')) {
+        menuButton.textContent = '✖';
+    } else {
+        menuButton.textContent = '☰';
+    }
 });

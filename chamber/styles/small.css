@@ -1,25 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
 /* Base styles for 320px+ (Mobile First) */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Salsa', cursive;
   margin: 0;
   padding: 0;
 }
 
-header nav ul {
-  list-style: none;
+/* Site Branding / Visible Page Title */
+.site-branding {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   padding: 1rem;
+  background-color: #f4f4f4;
+  /* A light background to make the logo and text pop */
+}
+
+.site-branding img {
+  margin-right: 1rem;
+}
+
+/* Header and Navigation */
+#menu-button {
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: 'Salsa', cursive;
+}
+
+header nav ul {
+  list-style: none;
+  display: none;
+  /* Hidden by default on mobile */
+  flex-direction: column;
+  /* Forces the vertical stack */
+  padding: 0;
+  /* Removed padding so links stretch full width */
   background-color: #333;
   margin: 0;
+}
+
+header nav ul.open {
+  display: flex;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  /* Larger padding for better mobile touch targets */
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  /* Adds a clean divider line between stacked links */
 }
 
+/* Removes the divider line from the last link in the stack */
+header nav li:last-child a {
+  border-bottom: none;
+}
+
+/* Toggle Buttons */
 .menu-controls {
   text-align: center;
   margin: 1rem 0;
@@ -29,26 +78,126 @@ header nav a {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   cursor: pointer;
+  font-family: 'Salsa', cursive;
 }
 
-/* Default to stacking on small screens regardless of view */
+/* Directory Container Setup */
+#directory-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Base Card Styles (Default Mobile Grid View / Stacked) */
 #directory-container section {
-  border: 1px solid #ccc;
+  border: 2px solid #009e60;
+  /* Ivory Coast Flag Green */
   padding: 1rem;
   margin: 1rem;
-  text-align: center;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  /* Adds a nice curve to your new green border */
 }
 
-#directory-container img {
+#directory-container section img {
   max-width: 100%;
   height: auto;
 }
 
+/* Mobile List View Overrides (Horizontal Row) */
+#directory-container.list section {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#directory-container.list section img {
+  width: 75px;
+  margin: 0;
+}
+
+#directory-container.list .card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#directory-container.list .card-content h3,
+#directory-container.list .card-content p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* =========================================
+   Interactive Hover Effects & Accessibility
+   ========================================= */
+
+/* 1. Navigation Links */
+header nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  /* A darkened Ivory Coast green (#006b41) provides excellent contrast against white text */
+  background-color: #006b41;
+  color: #ffffff;
+}
+
+/* 2. Hamburger Menu Button */
+#menu-button {
+  transition: color 0.3s ease;
+}
+
+#menu-button:hover,
+#menu-button:focus {
+  color: #006b41;
+}
+
+/* 3. Grid / List Toggle Buttons */
+.menu-controls button {
+  background-color: #333333;
+  color: #ffffff;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu-controls button:hover,
+.menu-controls button:focus {
+  background-color: #006b41;
+  border-color: #006b41;
+  color: #ffffff;
+}
+
+/* 4. Directory Card Website Links */
+#directory-container .card-content a {
+  color: #006b41;
+  /* Dark green text on the light grey background passes contrast checks */
+  font-weight: bold;
+  text-decoration: none;
+  /* Clean look by default */
+  padding: 0.2rem 0;
+  transition: color 0.3s ease;
+}
+
+#directory-container .card-content a:hover,
+#directory-container .card-content a:focus {
+  color: #b34710;
+  /* Darkened orange for hover to maintain contrast */
+  text-decoration: underline;
+  /* Added underline on hover for extra accessibility */
 }
