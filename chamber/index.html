@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abidjan Chamber of Commerce - Home</title>
+  <meta name="description" content="Welcome to the Abidjan Chamber of Commerce. Connecting businesses in Ivory Coast.">
+  <meta name="author" content="Christensen KOH">
+  <meta property="og:title" content="Abidjan Chamber of Commerce - Home">
+  <meta property="og:description" content="Join the top companies in Ivory Coast and grow your business network.">
+  <meta property="og:image" content="https://christensen-koh.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://christensen-koh.github.io/wdd231/chamber/index.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa&display=swap">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- We will create a specific script for the home page later -->
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/favicon.svg" alt="CCI-CI Logo" width="60" height="60">
+      <span>Abidjan Chamber of Commerce and Industry</span>
+    </div>
+    <button id="menu-button" aria-label="Toggle navigation"></button>
+    <nav>
+      <ul id="primary-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home-main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Driving Business Growth in Abidjan</h2>
+        <p>Join the premier network of professionals and enterprises in Ivory Coast.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-grid">
+      <!-- Weather Card -->
+      <section class="weather-card">
+        <h3>Current Weather in Abidjan</h3>
+        <div id="weather-icon"></div>
+        <p id="current-temp"></p>
+        <p id="weather-desc"></p>
+        <hr>
+        <h4>3-Day Forecast</h4>
+        <ul id="forecast-list"></ul>
+      </section>
+
+      <!-- Member Spotlights -->
+      <section class="spotlights">
+        <h3>Business Spotlights</h3>
+        <div id="spotlight-container">
+          <!-- Spotlight cards will be injected here via JavaScript -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> | Christensen KOH | WDD 231</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

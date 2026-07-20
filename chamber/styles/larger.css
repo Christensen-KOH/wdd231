@@ -43,4 +43,43 @@
     width: 100px;
     margin-right: 1rem;
   }
+
+  /* Home Page Grid Layout for Desktop */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  /* Set spotlights to sit side-by-side on desktop */
+  #spotlight-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .spotlight-card {
+    flex: 1;
+  /* Ensures cards take up equal horizontal space */
+    margin: 0 0.5rem;
+  }
+
+  /* Join Page Layout */
+  .join-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  /* Discover Page Layout */
+  .discover-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  /* Sidebar takes 1 part, Gallery takes 3 parts */
+    align-items: start;
+  }
+  
+  /* Change gallery to a 2-column grid on desktop */
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }

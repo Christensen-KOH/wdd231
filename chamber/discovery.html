@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abidjan Chamber of Commerce - Discover</title>
+  <meta name="description" content="Discover the vibrant business environment and culture of Abidjan, Ivory Coast.">
+  <meta name="author" content="Christensen KOH">
+  <meta property="og:title" content="Discover Abidjan">
+  <meta property="og:description" content="Explore local demographics, business hubs, and stunning views of the city.">
+  <meta property="og:image" content="https://christensen-koh.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://christensen-koh.github.io/wdd231/chamber/discover.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa&display=swap">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/favicon.svg" alt="CCI-CI Logo" width="60" height="60">
+      <span>Abidjan Chamber of Commerce and Industry</span>
+    </div>
+    <button id="menu-button" aria-label="Toggle navigation"></button>
+    <nav>
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="discover-main">
+    <div class="discover-layout">
+      <!-- Sidebar / Demographics -->
+      <aside class="sidebar">
+        <div class="visit-card">
+          <h3 id="visit-message">Loading message...</h3>
+        </div>
+
+        <div class="demographics-card">
+          <h3>Abidjan Fast Facts</h3>
+          <ul>
+            <li><strong>Population:</strong> Over 5 Million</li>
+            <li><strong>Economy:</strong> Major seaport, industrial hub</li>
+            <li><strong>Language:</strong> French</li>
+            <li><strong>Currency:</strong> West African CFA franc</li>
+          </ul>
+        </div>
+
+        <div class="events-card">
+          <h3>Upcoming Events</h3>
+          <p>Annual Tech & Innovation Summit - Sept 15</p>
+          <p>West Africa Trade Expo - Oct 02</p>
+        </div>
+      </aside>
+
+      <!-- Image Gallery -->
+      <section class="gallery">
+        <figure>
+          <img src="https://placehold.co/400x300/009e60/ffffff?text=Abidjan+Skyline" alt="Abidjan City Skyline"
+            loading="lazy" width="400" height="300">
+          <figcaption>The bustling skyline of the Plateau district.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/f26522/ffffff?text=Port+Bouet" alt="Port of Abidjan" loading="lazy"
+            width="400" height="300">
+          <figcaption>The Port of Abidjan, a critical economic engine.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/009e60/ffffff?text=Local+Markets" alt="Local Markets" loading="lazy"
+            width="400" height="300">
+          <figcaption>Vibrant local markets driving small business.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/f26522/ffffff?text=Tech+Hub" alt="Tech Hub" loading="lazy" width="400"
+            height="300">
+          <figcaption>Growing technology and startup incubators.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/009e60/ffffff?text=St.+Paul+Cathedral" alt="St. Paul's Cathedral"
+            loading="lazy" width="400" height="300">
+          <figcaption>St. Paul's Cathedral, a cultural landmark.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/f26522/ffffff?text=Ebrie+Lagoon" alt="Ébrié Lagoon" loading="lazy"
+            width="400" height="300">
+          <figcaption>The Ébrié Lagoon connecting the city.</figcaption>
+        </figure>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> | Christensen KOH | WDD 231</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

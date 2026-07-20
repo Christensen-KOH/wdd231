@@ -174,3 +174,361 @@ header nav a:focus {
   color: #b34710;
   text-decoration: underline;
 }
+
+/* =========================================
+   Home Page Styles
+   ========================================= */
+
+#home-main {
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #006b41;
+  /* Ivory Coast Green */
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f26522;
+  /* Ivory Coast Orange */
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #b34710;
+  color: white;
+}
+
+/* Weather & Spotlight Cards */
+.weather-card,
+.spotlights {
+  border: 2px solid #009e60;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#forecast-list {
+  list-style: none;
+  padding: 0;
+}
+
+#forecast-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Spotlight Cards */
+#spotlight-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card h4 {
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card img {
+  max-width: 120px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+.spotlight-card .tier {
+  color: #f26522;
+  /* Ivory Coast Orange */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-top: 0;
+}
+
+.spotlight-card hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 1rem 0;
+}
+
+/* =========================================
+   Join Page Styles
+   ========================================= */
+
+#join-main {
+  padding: 1rem;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 2px solid #009e60;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Salsa', cursive;
+}
+
+.join-form input:required {
+  border-left: 4px solid #f26522;
+  /* Highlight required fields */
+}
+
+.join-form input:required:valid {
+  border-left: 4px solid #009e60;
+  /* Turn green when valid */
+}
+
+.membership-levels {
+  margin: 1rem 0;
+}
+
+.radio-label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.radio-label input {
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  background-color: #006b41;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: 'Salsa', cursive;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #004d2e;
+}
+
+/* Tier Info Cards */
+.tier-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tier-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.info-btn {
+  background-color: #f26522;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dialog Modals */
+dialog {
+  border: 2px solid #009e60;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close-dialog {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* =========================================
+   Thank You Page Styles
+   ========================================= */
+
+#thankyou-main {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.thankyou-card {
+  background-color: #f9f9f9;
+  border: 2px solid #009e60;
+  /* Ivory Coast Green */
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thankyou-card h2 {
+  color: #006b41;
+  margin-top: 0;
+}
+
+.thankyou-card .highlight {
+  font-weight: bold;
+  color: #f26522;
+  /* Ivory Coast Orange */
+}
+
+.thankyou-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.thankyou-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.timestamp-text {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* =========================================
+   Discover Page Styles
+   ========================================= */
+
+#discover-main {
+  padding: 1rem;
+}
+
+.discover-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Sidebar Styling */
+.sidebar>div {
+  background-color: #f9f9f9;
+  border: 2px solid #009e60;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#visit-message {
+  color: #f26522;
+  /* Ivory Coast Orange */
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Gallery Styling */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.gallery figure {
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.02);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.gallery figcaption {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}

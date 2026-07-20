@@ -4,26 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abidjan Chamber of Commerce Directory</title>
-  <meta name="description" content="Abidjan Chamber of Commerce Business Directory. Here are listed some popular companies found in Ivory Coast in general and especially in Abidjan.">
+  <title>Abidjan Chamber of Commerce - Thank You</title>
+  <meta name="description" content="Thank you for your membership application to the Abidjan Chamber of Commerce.">
   <meta name="author" content="Christensen KOH">
-
-  <meta property="og:title" content="Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore our local business directory. We are the top companies in Ivory Coast and also in the region.">
-
-  <meta property="og:image" content="https://christensen-koh.github.io/wdd231/chamber/images/favicon.svg">
-  <meta property="og:url" content="https://christensen-koh.github.io/wdd231/chamber/directory.html">
 
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa&display=swap">
+
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script>
+  <!-- Link to the new script that parses the URL -->
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -32,29 +27,35 @@
       <img src="images/favicon.svg" alt="CCI-CI Logo" width="60" height="60">
       <span>Abidjan Chamber of Commerce and Industry</span>
     </div>
-
-    <button id="menu-button" aria-label="Toggle navigation">☰</button>
-  
+    <button id="menu-button" aria-label="Toggle navigation"></button>
     <nav>
       <ul id="primary-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="discovery.html">Discover</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="thankyou-main">
+    <div class="thankyou-card">
+      <h2>Application Received!</h2>
+      <p>Thank you, <span id="display-fname" class="highlight"></span> <span id="display-lname"
+          class="highlight"></span>, for applying to join the Abidjan Chamber of Commerce.</p>
 
-    <h1>Principal companies</h1>
-    
-    <div class="menu-controls">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
+      <h3>Application Summary:</h3>
+      <ul>
+        <li><strong>Business Name:</strong> <span id="display-business"></span></li>
+        <li><strong>Email:</strong> <span id="display-email"></span></li>
+        <li><strong>Phone:</strong> <span id="display-phone"></span></li>
+        <li><strong>Membership Level:</strong> <span id="display-membership"></span></li>
+      </ul>
+
+      <p class="timestamp-text">Application submitted on: <span id="display-timestamp"></span></p>
+
+      <a href="index.html" class="cta-button">Return to Home</a>
     </div>
-
-    <div id="directory-container" class="grid"></div>
   </main>
 
   <footer>
