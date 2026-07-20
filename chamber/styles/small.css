@@ -184,25 +184,41 @@ header nav a:focus {
 }
 
 /* Hero Section */
+
 .hero {
-  background-color: #006b41;
-  /* Ivory Coast Green */
-  color: white;
-  text-align: center;
-  padding: 3rem 1rem;
-  border-radius: 8px;
+  position: relative;
   margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.hero h2 {
+.hero-img {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h2 {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .cta-button {
   display: inline-block;
   background-color: #f26522;
-  color: #333333;;
+  color: white;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   text-decoration: none;
   font-weight: bold;
@@ -219,7 +235,7 @@ header nav a:focus {
 
 /* Weather & Spotlight Cards */
 .weather-card,
-.spotlights {
+.spotlights, .current-events {
   border: 2px solid #009e60;
   background-color: #f9f9f9;
   padding: 1.5rem;
@@ -231,6 +247,21 @@ header nav a:focus {
 #forecast-list {
   list-style: none;
   padding: 0;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.event-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-list li:last-child {
+  border-bottom: none;
 }
 
 #forecast-list li {
