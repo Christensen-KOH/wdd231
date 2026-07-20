@@ -202,8 +202,7 @@ header nav a:focus {
 .cta-button {
   display: inline-block;
   background-color: #f26522;
-  /* Ivory Coast Orange */
-  color: white;
+  color: #333333;;
   padding: 1rem 2rem;
   text-decoration: none;
   font-weight: bold;
