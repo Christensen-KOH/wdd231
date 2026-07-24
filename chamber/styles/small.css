@@ -351,12 +351,10 @@ header nav a:focus {
 
 .join-form input:required {
   border-left: 4px solid #f26522;
-  /* Highlight required fields */
 }
 
 .join-form input:required:valid {
   border-left: 4px solid #009e60;
-  /* Turn green when valid */
 }
 
 .membership-levels {
@@ -408,6 +406,7 @@ header nav a:focus {
 .info-btn {
   background-color: #f26522;
   font-size: 1.2rem;
+  font-weight: bold;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
