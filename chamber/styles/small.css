@@ -407,6 +407,7 @@ header nav a:focus {
 
 .info-btn {
   background-color: #f26522;
+  font-size: 1.2rem;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
