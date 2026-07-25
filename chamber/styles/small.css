@@ -559,12 +559,6 @@ dialog::backdrop {
 }
 
 /* Gallery Styling */
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
 .gallery figure {
   margin: 0;
   background-color: #fff;
