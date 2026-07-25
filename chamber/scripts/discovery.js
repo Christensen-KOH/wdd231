@@ -1,3 +1,6 @@
+// Import the JSON data module
+import { discoverItems } from '../data/discover.mjs';
+
 // Automatically update footer dates
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
@@ -38,7 +41,7 @@ if (lastVisit === 0) {
 
     if (timeDifference < msToDays) {
         // Visited less than a day ago
-        visitMessageElement.textContent = "Back so soon! Awesome!";
+        visitMessageElement.textContent = "Welcome back!";
     } else {
         // Visited 1 or more days ago
         if (daysDifference === 1) {
@@ -51,3 +54,53 @@ if (lastVisit === 0) {
 
 // Update the local storage with today's timestamp for the next time they visit
 window.localStorage.setItem('discoverLastVisit', today);
+
+// ==========================================
+// Dynamic Card Generation
+// ==========================================
+const gallery = document.querySelector('.gallery');
+
+// Loop through each item in the data file
+discoverItems.forEach((item, index) => {
+    // Create the main card container
+    const card = document.createElement('article');
+    // Assign a unique class to each card (card-1, card-2, etc.) so we can target them with grid-areas later
+    card.className = `discover-card card-${index + 1}`; 
+
+    // Create the Title
+    const title = document.createElement('h2');
+    title.textContent = item.title;
+
+    // Create the Figure and Image (with lazy loading)
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = item.photo;
+    img.alt = item.title;
+    img.loading = 'lazy'; // Rubric requirement
+    img.width = 300;
+    img.height = 200;
+    figure.appendChild(img);
+
+    // Create the Address
+    const address = document.createElement('address');
+    address.textContent = item.address;
+
+    // Create the Description
+    const desc = document.createElement('p');
+    desc.textContent = item.description;
+
+    // Create the Learn More Button
+    const btn = document.createElement('button');
+    btn.textContent = 'Learn More';
+    btn.className = 'learn-more-btn';
+
+    // Append all elements to the card
+    card.appendChild(title);
+    card.appendChild(figure);
+    card.appendChild(address);
+    card.appendChild(desc);
+    card.appendChild(btn);
+
+    // Append the finished card to the gallery section
+    gallery.appendChild(card);
+});
