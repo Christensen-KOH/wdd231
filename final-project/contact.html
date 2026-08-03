@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Speak up with Chris for personalized English tutoring. Whether you need technical English or conversational practice, we are here to help.">
+    <meta name="author" content="Christensen KOH">
+    <title>Contact Us | Speak up with Chris</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.webp" loading="lazy" alt="Speak up logo">
+        <button id="menu" aria-label="Main Menu">☰</button>
+        <nav class="nav">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="book.html">Book a session</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <div class="company-header">
+            <h1>Have a question or suggestion for us?</h1>
+            <div class="company-info">
+                <address>
+                    8XQJ+X8H, Abidjan, Côte d’Ivoire<br>
+                    Online lessons worldwide<br>
+                    WhatsApp: +7 952 836 6025<br>
+                    Email: christendedios@gmail.com
+                </address>
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.502825327143!2d-4.0217009242878445!3d5.339931894638667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebd5efd93b5f%3A0x82bcf54193827db4!2sPlateau%20cit%20administratives!5e0!3m2!1sen!2slt!4v1775952498654!5m2!1sen!2slt"
+                    width="400" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="#" method="get" id="contact-form">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <p>Purpose of Message:</p>
+                <div class="radio-group">
+                    <label><input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry</label>
+                    <label><input type="radio" id="technical" name="purpose" value="technical">
+                        Technical English Question</label>
+                    <label><input type="radio" id="curriculum" name="purpose" value="curriculum">
+                        Curriculum Details</label>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"
+                    placeholder="Tell us about your English learning goals..." required></textarea>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter"> Send me English tips and updates </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="contact-confirmation"></div>
+        </div>
+
+        <section class="employees">
+            <h2>Your Mentors</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/profile.webp" loading="lazy" alt="Christensen KOH">
+                    <figcaption>Christensen - Technical English Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/mifa.webp" loading="lazy" alt="Maria KOH">
+                    <figcaption>Maria - Conversational Fluency Tutor</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© ♣ <span id="current-year">2026</span> ♣ Christensen KOH | Ivory Coast</p>
+        <p><span id="lastModified">Last Modified: </span></p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/share/1C8kSKyYR3/">
+                <img src="images/facebook-square.svg" loading="lazy" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/@speakupwithchris">
+                <img src="images/youtube.svg" loading="lazy" alt="YouTube">
+            </a>
+            <a href="https://WA.me/79528366025">
+                <img src="images/whatsapp.svg" loading="lazy" alt="WhatsApp">
+            </a>
+
+            <a href="https://www.instagram.com/chris2dios">
+                <img src="images/instagram.svg" loading="lazy" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

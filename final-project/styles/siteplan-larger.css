@@ -1,0 +1,60 @@
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main {
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 15px;
+  }
+
+  section ul {
+    padding-left: 15px;
+  }
+
+  footer {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+
+  .wireframe-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .wireframe-box {
+    padding: 15px;
+  }
+}
