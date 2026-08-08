@@ -63,6 +63,10 @@ header nav a {
   border-bottom: 1px solid #444;
 }
 
+.active{
+  background-color: #c94c14;
+}
+
 header nav li:last-child a {
   border-bottom: none;
 }
@@ -591,7 +595,6 @@ dialog::backdrop {
    Discover Page - Grid Areas & Card Styling
    ========================================= */
 
-/* Assigning a grid-area name to each generated card */
 .card-1 {
   grid-area: c1;
 }
