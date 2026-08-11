@@ -1,5 +1,3 @@
-// scripts/main.js
-
 import { fetchIdioms } from './api.js';
 import { displayIdioms } from './ui.js';
 
