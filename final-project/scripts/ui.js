@@ -45,7 +45,7 @@ function renderSingleIdiom() {
             <p class="tag"><strong>Level:</strong> ${item.level}</p>
             <p><strong>Meaning:</strong> ${item.meaning}</p>
             <blockquote>"${item.example}"</blockquote>
-            <p style="margin-top: 15px; font-size: 0.8rem; color: gray;">
+            <p style="margin-top: 15px; font-size: 0.8rem; color: #333;">
                 Card ${currentIndex + 1} of ${idiomsData.length}
             </p>
         </div>
