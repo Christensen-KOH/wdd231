@@ -198,7 +198,7 @@ section {
 }
 
 /* ========== IDIOM CAROUSEL ========== */
-.idioms{
+.idioms, .preview, .fun-en{
     text-align: center;
 }
 .carousel-container {
